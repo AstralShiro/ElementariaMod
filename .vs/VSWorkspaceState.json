@@ -1,12 +1,14 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Assets",
-    "\\Assets\\Music",
-    "\\Assets\\Textures",
-    "\\Assets\\Textures\\Menu",
-    "\\Content"
+    "\\Content",
+    "\\Content\\Buffs",
+    "\\Content\\Buffs\\PetBuffs",
+    "\\Content\\Items",
+    "\\Content\\Items\\PetItem",
+    "\\Content\\Projectiles",
+    "\\Content\\Projectiles\\PetsProj"
   ],
-  "SelectedNode": "\\Assets\\Music",
+  "SelectedNode": "\\Content\\Items\\PetItem\\MarshyButterfly.png",
   "PreviewInSolutionExplorer": false
 }
