@@ -1,0 +1,3 @@
+displayName = Elementaria Mod
+author = SN Company
+version = 0.1
