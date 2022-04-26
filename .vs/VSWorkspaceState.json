@@ -2,13 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\Content",
-    "\\Content\\Buffs",
-    "\\Content\\Buffs\\PetBuffs",
-    "\\Content\\Items",
-    "\\Content\\Items\\PetItem",
-    "\\Content\\Projectiles",
-    "\\Content\\Projectiles\\PetsProj"
+    "\\Content\\Items"
   ],
-  "SelectedNode": "\\Content\\Items\\PetItem\\MarshyButterfly.png",
+  "SelectedNode": "\\Content\\Items\\TokenN.cs",
   "PreviewInSolutionExplorer": false
 }

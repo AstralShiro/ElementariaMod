@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "TdFN2WSDkVjFr6SqHS4Y2rD21FR2SBrCYi8pMWMHd0HFVBCUmn9aS9YrOdxhmksiKNjb1m3R8miZdbqeybRbfw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\astra\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ElementariaMod\\ElementariaMod.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\astra\\.nuget\\packages\\tmodloader.codeassist\\0.1.5\\tmodloader.codeassist.0.1.5.nupkg.sha512"
+  ],
+  "logs": []
+}
