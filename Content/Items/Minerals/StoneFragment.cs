@@ -20,8 +20,8 @@ namespace ElementariaMod.Content.Items.Minerals
 		}
 		public override void AddRecipes()
 		{
-			CreateRecipe(999)
-				.AddIngredient(ItemID.StoneBlock, 10)
+			CreateRecipe(1)
+				.AddIngredient(ItemID.StoneBlock, 5)
 				.AddTile(TileID.WorkBenches)
 				.Register();
 		}

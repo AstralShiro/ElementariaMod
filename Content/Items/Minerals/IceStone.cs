@@ -4,6 +4,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.GameContent.Creative;
+using System.Collections.Generic;
 
 namespace ElementariaMod.Content.Items.Minerals
 {
@@ -18,7 +19,14 @@ namespace ElementariaMod.Content.Items.Minerals
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 50;
 		}
 
-		public override void SetDefaults() {
+        public override void ModifyTooltips(List<TooltipLine> tooltips)
+        {
+			TooltipLine Line = new(Mod, "Ice Stone", "Ice Element");
+			Line.overrideColor = new Color(0, 125, 255);
+			tooltips.Add(Line);
+        }
+
+        public override void SetDefaults() {
 			Item.width = 27;
 			Item.height = 30;
 			Item.maxStack = 999;

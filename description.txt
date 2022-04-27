@@ -1,1 +1,25 @@
-Elementaria Mod is a pretty cool mod, it does...this. Modify this file with a description of your mod.
+Name : [c/fec2ff:Elementaria]
+Version : [c/508bfa:V0.0.1]
+Tags : Fantasy, rpg, extra content
+- - -
+Have you ever wanted a weapon but with a different element? well, with this mod you can have it.
+
+The mod focuses on vanilla, for the addition of elemental weapons, adds a wide range of extra items
+a great grinding to restore the sense of exploring and grinding the enemies of the biome of the element you are interested in.
+
+The mod is under development by releasing some items each version, keep updating and playing our mod so as not to miss anything new,
+in this way you can prepare for the release of the weapons.
+
+This mod also changes the combat style of the weapons giving them a unique and never seen effect.
+
+
+[c/508bfa:Content List:]
+
+
+- - -
+[c/fec2ff:New content:]
+
+- - -
+
+SN Company.
+(enter in our discord to not miss our works outside the terraria).
