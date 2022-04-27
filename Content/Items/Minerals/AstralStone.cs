@@ -7,12 +7,12 @@ using Terraria.GameContent.Creative;
 
 namespace ElementariaMod.Content.Items.Minerals
 {
-	public class AirStone : ModItem
+	public class AstralStone : ModItem
 	{
 		public override void SetStaticDefaults() 
 		{
-			DisplayName.SetDefault("Air Stone");
-			Tooltip.SetDefault("A stone infused with the power of air");
+			DisplayName.SetDefault("Astral Stone");
+			Tooltip.SetDefault("A stone infused with magical corruption");
 
 			Main.RegisterItemAnimation(Item.type, new DrawAnimationVertical(5,6));
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 50;
