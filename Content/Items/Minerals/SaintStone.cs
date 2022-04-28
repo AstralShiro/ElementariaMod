@@ -8,11 +8,11 @@ using System.Collections.Generic;
 
 namespace ElementariaMod.Content.Items.Minerals
 {
-	public class HallowStone : ModItem
+	public class SaintStone : ModItem
 	{
 		public override void SetStaticDefaults() 
 		{
-			DisplayName.SetDefault("Hallow Stone");
+			DisplayName.SetDefault("Saint Stone");
 			Tooltip.SetDefault("A stone infused with the power of sanctification");
 
 			Main.RegisterItemAnimation(Item.type, new DrawAnimationVertical(5,6));
@@ -20,7 +20,7 @@ namespace ElementariaMod.Content.Items.Minerals
 		}
 		public override void ModifyTooltips(List<TooltipLine> tooltips)
 		{
-			TooltipLine Line = new(Mod, "Hallow Stone", "Saint Element");
+			TooltipLine Line = new(Mod, "Saint Stone", "Saint Element");
 			Line.overrideColor = new Color(255, 150, 255);
 			tooltips.Add(Line);
 		}

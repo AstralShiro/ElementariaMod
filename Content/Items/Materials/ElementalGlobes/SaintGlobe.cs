@@ -7,12 +7,12 @@ using Terraria.GameContent.Creative;
 
 namespace ElementariaMod.Content.Items.Materials.ElementalGlobes
 {
-	public class HallowGlobe : ModItem
+	public class SaintGlobe : ModItem
 	{
 		public override void SetStaticDefaults() 
 		{
-			DisplayName.SetDefault("Hallow Globe");
-			Tooltip.SetDefault("The soul of a living being infused into a globe, second material to craft the Hallow Elemental Core");
+			DisplayName.SetDefault("Saint Globe");
+			Tooltip.SetDefault("The soul of a living being infused into a globe, second material to craft the Saint Elemental Core");
 			Main.RegisterItemAnimation(Item.type, new DrawAnimationVertical(5, 4));
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 100;

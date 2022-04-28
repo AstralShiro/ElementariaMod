@@ -1,14 +1,21 @@
 using Terraria.ID;
 using Terraria.ModLoader;
-using ElementariaMod.Content.Items.Minerals;
+using Microsoft.Xna.Framework;
+using Terraria;
+using Terraria.DataStructures;
 
-//using Elementaria.Tiles.CraftingStation;
+using Terraria.GameContent.Creative;
+using System.Collections.Generic;
+
+
+using ElementariaMod.Content.Items.Minerals;
+using ElementariaMod.Content.Tiles.CraftingStation;
 
 namespace ElementariaMod.Content.Items.Materials.ElementalCores
 {
 	public class EmptyCore : ModItem
 	{
-		public override void SetStaticDefaults() 
+		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Empty Core");
 			Tooltip.SetDefault("A mystical stone, it can be used to create elemental cores");
@@ -25,7 +32,7 @@ namespace ElementariaMod.Content.Items.Materials.ElementalCores
 		{
 			CreateRecipe(1)
 				.AddIngredient(ModContent.ItemType<StoneFragment>(), 5)
-				//.AddTile(ModContent.TileType<Content.Tiles.CraftingStation.ElementalPedestal>());
+				.AddTile(ModContent.TileType<ElementalPedestalTile>())
 				.Register();
 		}
 	}

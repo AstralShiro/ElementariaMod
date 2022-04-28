@@ -6,12 +6,12 @@ using ElementariaMod.Content.Items.Materials.ElementalGlobes;
 
 namespace ElementariaMod.Content.Items.Materials.ElementalCores.T1
 {
-	public class IceCore : ModItem
+	public class SaintCore : ModItem
 	{
 		public override void SetStaticDefaults() 
 		{
-			DisplayName.SetDefault("Ice Core");
-			Tooltip.SetDefault("A powerful and bright elemental core, allows you to create Ice element weapons");
+			DisplayName.SetDefault("Saint Core");
+			Tooltip.SetDefault("A powerful and bright elemental core, allows you to create Saint element weapons");
 		}
 
 		public override void SetDefaults() {
@@ -19,9 +19,8 @@ namespace ElementariaMod.Content.Items.Materials.ElementalCores.T1
 			Item.height = 32;
 			Item.maxStack = 999;
 			Item.value = 100;
-			Item.rare = ItemRarityID.Cyan;
+			Item.rare = ItemRarityID.Pink;
 		}
-
 		public override void AddRecipes()
 		{
 			CreateRecipe(1)
