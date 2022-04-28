@@ -1,7 +1,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-//using Elementaria.Tiles.CraftingStation;
+using ElementariaMod.Content.Tiles.CraftingStation;
 
 namespace ElementariaMod.Content.Items.Materials.ElementalCores
 {
@@ -26,7 +26,7 @@ namespace ElementariaMod.Content.Items.Materials.ElementalCores
 			CreateRecipe(1)
 				.AddIngredient(ModContent.ItemType<Content.Items.Materials.CosmoHeart>(), 1)
 				.AddIngredient(ModContent.ItemType<Content.Items.Materials.ElementalCores.EmptyCore>(), 1)
-				//.AddTile(ModContent.TileType<Content.Tiles.CraftingStation.ArcaneSmithyT3Tile>());
+				.AddTile(ModContent.TileType<ElementalPedestalTile>())
 				.Register();
 		}
 	}

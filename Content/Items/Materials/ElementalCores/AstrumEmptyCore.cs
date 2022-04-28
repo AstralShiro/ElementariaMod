@@ -1,16 +1,16 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-//using Elementaria.Tiles.CraftingStation;
+using ElementariaMod.Content.Tiles.CraftingStation;
 
 namespace ElementariaMod.Content.Items.Materials.ElementalCores
 {
-	public class ArcanumEmptyCore : ModItem
+	public class AstrumEmptyCore : ModItem
 	{
 		public override void SetStaticDefaults() 
 		{
-			DisplayName.SetDefault("Arcanum Empty Core");
-			Tooltip.SetDefault("A mystical stone, it can be used to Arcanum elemental cores");
+			DisplayName.SetDefault("Astrum Empty Core");
+			Tooltip.SetDefault("A mystical stone, it can be used to Astrum elemental cores");
 		}
 
 		public override void SetDefaults() {
@@ -25,7 +25,7 @@ namespace ElementariaMod.Content.Items.Materials.ElementalCores
 			CreateRecipe(1)
 				.AddIngredient(ModContent.ItemType<Content.Items.Materials.ArcanumHeart>(), 1)
 				.AddIngredient(ModContent.ItemType<Content.Items.Materials.ElementalCores.EmptyCore>(), 1)
-				//.AddTile(ModContent.TileType<Content.Tiles.CraftingStation.ElementalPedestal>());
+				.AddTile(ModContent.TileType<ElementalPedestalTile>())
 				.Register();
 		}
 	}

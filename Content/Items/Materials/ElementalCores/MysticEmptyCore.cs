@@ -3,7 +3,7 @@ using Terraria.ModLoader;
 
 using ElementariaMod.Content.Items.Materials;
 using ElementariaMod.Content.Items.Materials.ElementalCores;
-//using Elementaria.Tiles.CraftingStation;
+using ElementariaMod.Content.Tiles.CraftingStation;
 
 namespace ElementariaMod.Content.Items.Materials.ElementalCores
 {
@@ -28,7 +28,7 @@ namespace ElementariaMod.Content.Items.Materials.ElementalCores
 			CreateRecipe(1)
 				.AddIngredient(ModContent.ItemType<PlanteraHeart>(), 1)
 				.AddIngredient(ModContent.ItemType<EmptyCore>(), 1)
-				//.AddTile(ModContent.TileType<Content.Tiles.CraftingStation.ElementalPedestal>());
+				.AddTile(ModContent.TileType<ElementalPedestalTile>())
 				.Register();
 		}
 	}

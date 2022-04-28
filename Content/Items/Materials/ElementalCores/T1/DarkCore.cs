@@ -24,7 +24,7 @@ namespace ElementariaMod.Content.Items.Materials.ElementalCores.T1
 		public override void AddRecipes()
 		{
 			CreateRecipe(1)
-				.AddIngredient(ModContent.ItemType<EmptyCore>(), 5)
+				.AddIngredient(ModContent.ItemType<EmptyCore>(), 1)
 				.AddIngredient(ModContent.ItemType<DarkGlobe>(), 25)
 				.AddTile(ModContent.TileType<ElementalPedestalTile>())
 				.Register();
