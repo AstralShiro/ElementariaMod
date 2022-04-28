@@ -1,6 +1,8 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
+using ElementariaMod.Content.Rarities;
+
 namespace ElementariaMod.Content.Items.Materials
 {
 	public class CosmoHeart : ModItem
@@ -16,7 +18,7 @@ namespace ElementariaMod.Content.Items.Materials
 			Item.height = 32;
 			Item.maxStack = 1;
 			Item.value = 100;
-			//Item.rare = ItemRarityID.Expert;
+			Item.rare = ModContent.RarityType<ArcanumModRarity>();
 		}
 	}
 }

@@ -12,7 +12,7 @@ namespace ElementariaMod.Content.Items.Placeable.CraftingStation
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Arcane Anvil");
-			Tooltip.SetDefault("Crafting station for craft the Weapons TSS");
+			Tooltip.SetDefault("Crafting station for craft the Weapons\nArcane Anvil TSS");
 		}
 
 		public override void SetDefaults()
@@ -27,7 +27,7 @@ namespace ElementariaMod.Content.Items.Placeable.CraftingStation
 			Item.useStyle = ItemUseStyleID.Swing;
 			Item.consumable = true;
 			Item.value = 150;
-			Item.createTile = TileType<Tiles.CraftingStation.ArcaneAnvilTSSTile>();
+			Item.createTile = TileType<Content.Tiles.CraftingStation.ArcaneAnvilTSSTile>();
 		}
 
 		public override void AddRecipes()

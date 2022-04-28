@@ -20,7 +20,7 @@ namespace ElementariaMod.Content.Items.Accessory.Rings
             Item.width = 30;
             Item.height = 30;
             Item.value = 10;
-            Item.rare = 1;
+            Item.rare = ItemRarityID.Blue;
             Item.accessory = true;
         }
 
@@ -43,7 +43,7 @@ namespace ElementariaMod.Content.Items.Accessory.Rings
                 .AddIngredient(ModContent.ItemType<Content.Items.Materials.ElementalCores.EmptyCore>(), 1)
                 .AddIngredient(ItemID.Amethyst, 1)
                 .AddIngredient(ItemID.PlatinumBar, 1)
-                .AddTile(ModContent.TileType<Content.Tiles.CraftingStatio.ArcaneSmithyTile>())
+                .AddTile(ModContent.TileType<Content.Tiles.CraftingStation.ArcaneSmithyTile>())
                 .Register();
         }
     }

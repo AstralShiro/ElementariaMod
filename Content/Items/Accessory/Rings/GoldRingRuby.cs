@@ -41,7 +41,7 @@ namespace ElementariaMod.Content.Items.Accessory.Rings
                 .AddIngredient(ModContent.ItemType<Content.Items.Materials.ElementalCores.EmptyCore>(), 1)
                 .AddIngredient(ItemID.Ruby, 1)
                 .AddIngredient(ItemID.PlatinumBar, 1)
-                .AddTile(ModContent.TileType<Content.Tiles.CraftingStatio.ArcaneSmithyTile>())
+                .AddTile(ModContent.TileType<Content.Tiles.CraftingStation.ArcaneSmithyTile>())
                 .Register();
         }
     }

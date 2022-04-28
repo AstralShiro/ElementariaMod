@@ -20,7 +20,7 @@ namespace ElementariaMod.Content.Items.Accessory.Rings
             Item.width = 30;
             Item.height = 30;
             Item.value = 10;
-            Item.rare = 3;
+            Item.rare = ItemRarityID.Orange;
             Item.accessory = true;
         }
 

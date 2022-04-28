@@ -12,7 +12,7 @@ namespace ElementariaMod.Content.Items.Placeable.CraftingStation
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Arcane Smithy");
-			Tooltip.SetDefault("Crafting station for craft the Armors T4");
+			Tooltip.SetDefault("Crafting station for craft the Armors and Accessories\nArcane Smithy T4");
 		}
 
 		public override void SetDefaults()
@@ -27,7 +27,7 @@ namespace ElementariaMod.Content.Items.Placeable.CraftingStation
 			Item.useStyle = ItemUseStyleID.Swing;
 			Item.consumable = true;
 			Item.value = 150;
-			Item.createTile = TileType<Tiles.CraftingStation.ArcaneSmithyT4Tile>();
+			Item.createTile = TileType<Content.Tiles.CraftingStation.ArcaneSmithyT4Tile>();
 		}
 
 		public override void AddRecipes()

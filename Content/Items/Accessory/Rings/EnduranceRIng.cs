@@ -20,7 +20,7 @@ namespace ElementariaMod.Content.Items.Accessory.Rings
             Item.width = 30;
             Item.height = 30;
             Item.value = 10;
-            Item.rare =  4;
+            Item.rare =  ItemRarityID.LightRed;
             Item.accessory = true;
         }
 
@@ -34,7 +34,7 @@ namespace ElementariaMod.Content.Items.Accessory.Rings
         {
             CreateRecipe(1)
                 .AddIngredient(ModContent.ItemType<Content.Items.Materials.ElementalCores.DreamEmptyCore>(), 1)
-                .AddIngredient(ModContent.ItemType<Content.Items.Accessory.Rings.SupremeStone>(), 1)
+                .AddIngredient(ModContent.ItemType<Content.Items.Accessory.Rings.SupremeStoneRing>(), 1)
                 .AddIngredient(ItemID.StoneBlock, 50)
                 .AddTile(ModContent.TileType<Content.Tiles.CraftingStation.ArcaneSmithyT4Tile>())
                 .Register();

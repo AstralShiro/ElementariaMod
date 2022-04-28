@@ -20,7 +20,7 @@ namespace ElementariaMod.Content.Items.Accessory.Rings
             Item.width = 34;
             Item.height = 34;
             Item.value = 10;
-            Item.rare = 5;
+            Item.rare = ItemRarityID.Pink;
             Item.accessory = true;
         }
 
@@ -40,7 +40,7 @@ namespace ElementariaMod.Content.Items.Accessory.Rings
             player.manaRegen += 4;
             player.statDefense += 20;
             player.moveSpeed -= 0.15f;
-            player. = true;
+            player.longInvince = true;
             player.lavaImmune = true;
             player.manaMagnet = true;
         }

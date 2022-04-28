@@ -20,13 +20,13 @@ namespace ElementariaMod.Content.Items.Accessory.Rings
             Item.width = 30;
             Item.height = 30;
             Item.value = 10;
-            Item.rare = 4;
+            Item.rare = ItemRarityID.LightRed;
             Item.accessory = true;
         }
 
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            player.immune = true;
+            player.longInvince = true;
             player.lavaImmune = true;
         }
         public override void AddRecipes()
@@ -34,7 +34,7 @@ namespace ElementariaMod.Content.Items.Accessory.Rings
             CreateRecipe(1)
                 .AddIngredient(ModContent.ItemType<Content.Items.Materials.ElementalCores.DreamEmptyCore>(), 1)
                 .AddIngredient(ModContent.ItemType<Content.Items.Accessory.Rings.ObsidianRing>(), 1)
-                .AddIngredient(ItemID.CrystalShard, 25)
+                .AddIngredient(ItemID.CrystalShard, 50)
                 .AddTile(ModContent.TileType<Content.Tiles.CraftingStation.ArcaneSmithyT4Tile>())
                 .Register();
         }

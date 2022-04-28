@@ -5,6 +5,8 @@ using Terraria.Net;
 using Terraria.GameContent.NetModules;
 using Terraria.GameContent.Creative;
 
+using ElementariaMod.Content.Rarities;
+
 namespace ElementariaMod.Content.Items
 {
     public class TokenN : ModItem
@@ -22,7 +24,7 @@ namespace ElementariaMod.Content.Items
             Item.width = 26;
             Item.height = 26;
 
-            Item.rare = ItemRarityID.Master;
+            Item.rare = ModContent.RarityType<AncestralModRarity>();
             Item.value = Item.sellPrice(gold: 1);
             Item.maxStack = 29;
         }

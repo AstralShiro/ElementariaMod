@@ -11,8 +11,8 @@ namespace ElementariaMod.Content.Items.Placeable.CraftingStation
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Arcane Rare Anvil");
-			Tooltip.SetDefault("Crafting station for craft the Rare Weapons T2");
+			DisplayName.SetDefault("Arcane Anvil");
+			Tooltip.SetDefault("Crafting station for craft the Weapons\nArcane Anvil T2");
 		}
 
 		public override void SetDefaults()
@@ -27,7 +27,7 @@ namespace ElementariaMod.Content.Items.Placeable.CraftingStation
 			Item.useStyle = ItemUseStyleID.Swing;
 			Item.consumable = true;
 			Item.value = 150;
-			Item.createTile = TileType<Tiles.CraftingStation.ArcaneAnvilT2Tile>();
+			Item.createTile = TileType<Content.Tiles.CraftingStation.ArcaneAnvilT2Tile>();
 		}
 
 		public override void AddRecipes()
@@ -38,6 +38,5 @@ namespace ElementariaMod.Content.Items.Placeable.CraftingStation
 				.AddTile(TileID.WorkBenches)
 				.Register();
 		}
-
 	}
 }

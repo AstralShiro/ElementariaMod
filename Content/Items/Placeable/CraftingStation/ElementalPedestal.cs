@@ -24,7 +24,7 @@ namespace ElementariaMod.Content.Items.Placeable.CraftingStation
 			Item.useStyle = ItemUseStyleID.Swing;
 			Item.consumable = true;
 			Item.value = 150;
-			Item.createTile = TileType<Tiles.CraftingStation.ElementalPedestalTile>();
+			Item.createTile = TileType<Content.Tiles.CraftingStation.ElementalPedestalTile>();
 		}
 		public override void AddRecipes()
 		{

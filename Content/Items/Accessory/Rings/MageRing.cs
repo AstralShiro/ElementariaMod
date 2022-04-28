@@ -20,7 +20,7 @@ namespace ElementariaMod.Content.Items.Accessory.Rings
             Item.width = 30;
             Item.height = 30;
             Item.value = 10;
-            Item.rare = 2;
+            Item.rare = ItemRarityID.Green;
             Item.accessory = true;
         }
 
@@ -32,9 +32,9 @@ namespace ElementariaMod.Content.Items.Accessory.Rings
         public override void AddRecipes()
         {
             CreateRecipe(999)
-                //.AddIngredient(ModContent.ItemType<Content.Items.Materials.ElementalCores.RareEmptyCore>(), 1)
+                .AddIngredient(ModContent.ItemType<Content.Items.Materials.ElementalCores.RareEmptyCore>(), 1)
                 .AddIngredient(ItemID.ManaCrystal, 5)
-                //.AddTile(ModContent.TileType<Content.Tiles.CraftingStation.ArcaneSmithyT3Tile>());
+                .AddTile(ModContent.TileType<Content.Tiles.CraftingStation.ArcaneSmithyT3Tile>())
                 .Register();
         }
     }

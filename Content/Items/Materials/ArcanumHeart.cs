@@ -3,6 +3,8 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.GameContent.Creative;
 
+using ElementariaMod.Content.Rarities;
+
 namespace ElementariaMod.Content.Items.Materials
 {
 	public class ArcanumHeart : ModItem
@@ -20,7 +22,7 @@ namespace ElementariaMod.Content.Items.Materials
 
 			Item.maxStack = 1;
 			Item.value = Item.sellPrice(gold: 1, silver: 50);
-			//Item.rare = ItemRarityID.Green;
+			Item.rare = ModContent.RarityType<ArcanumModRarity>();
 		}
 	}
 }

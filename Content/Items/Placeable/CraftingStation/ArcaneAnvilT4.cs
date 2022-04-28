@@ -12,7 +12,7 @@ namespace ElementariaMod.Content.Items.Placeable.CraftingStation
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Arcane Anvil");
-			Tooltip.SetDefault("Crafting station for craft the Weapons T4");
+			Tooltip.SetDefault("Crafting station for craft the Weapons\nArcane Anvil T4");
 		}
 
 		public override void SetDefaults()

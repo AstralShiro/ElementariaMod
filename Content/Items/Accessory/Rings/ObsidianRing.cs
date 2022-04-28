@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ElementariaMod.Items.Accessory.Rings
+namespace ElementariaMod.Content.Items.Accessory.Rings
 {
     public class ObsidianRing : ModItem
     {
@@ -20,7 +20,7 @@ namespace ElementariaMod.Items.Accessory.Rings
             Item.width = 30;
             Item.height = 30;
             Item.value = 10;
-            Item.rare = 2;
+            Item.rare = ItemRarityID.Green;
             Item.accessory = true;
         }
 

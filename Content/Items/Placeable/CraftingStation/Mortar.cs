@@ -2,9 +2,9 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-using Elementaria.Tiles.CraftingStation;
+using ElementariaMod.Content.Tiles.CraftingStation;
 
-namespace Elementaria.Items.Placeable.CraftingStation
+namespace ElementariaMod.Content.Items.Placeable.CraftingStation
 {
 	public class Mortar : ModItem
 	{
@@ -16,27 +16,25 @@ namespace Elementaria.Items.Placeable.CraftingStation
 
 		public override void SetDefaults()
 		{
-			item.width = 38;
-			item.height = 26;
-			item.maxStack = 99;
-			item.useTurn = true;
-			item.autoReuse = true;
-			item.useAnimation = 15;
-			item.useTime = 10;
-			item.useStyle = 1;
-			item.consumable = true;
-			item.value = 150;
-			item.createTile = TileType<MortarTile>();
+			Item.width = 38;
+			Item.height = 26;
+			Item.maxStack = 99;
+			Item.useTurn = true;
+			Item.autoReuse = true;
+			Item.useAnimation = 15;
+			Item.useTime = 10;
+			Item.useStyle = ItemUseStyleID.Swing;
+			Item.consumable = true;
+			Item.value = 150;
+			Item.createTile = TileType<MortarTile>();
 		}
-
 		public override void AddRecipes()
 		{
-			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ModContent.ItemType<EmptyWorkTable>(), 1);
-			recipe.AddIngredient(ItemID.StoneBlock, 5);
-			recipe.AddTile(TileID.WorkBenches);
-			recipe.SetResult(this);
-;			recipe.AddRecipe();
+			CreateRecipe(1)
+				.AddIngredient(ModContent.ItemType<EmptyCraftingStation>(), 1)
+				.AddIngredient(ItemID.StoneBlock, 10)
+				.AddTile(TileID.WorkBenches)
+				.Register();
 		}
 	}
 }
