@@ -8,11 +8,11 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-using Elementaria.Tiles.CraftingStation;
-using Elementaria.Items.Materials.Minerals;
-using Elementaria.Items.Materials.Globe;
+using ElementariaMod.Content.Items.Minerals;
+using ElementariaMod.Content.Tiles.CraftingStation;
 
-namespace Elementaria.Items.Powders
+
+namespace ElementariaMod.Content.Items.Materials.Powders
 {
 
     public class EarthPowder : ModItem
@@ -21,28 +21,22 @@ namespace Elementaria.Items.Powders
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Earth powder");
-            Tooltip.SetDefault("Use it for craft the Earth Powder");
+            Tooltip.SetDefault("Use it for craft the Earth Globe");
         }
         public override void SetDefaults()
         {
-            item.width = 26;
-            item.height = 14;
-            item.rare = 1;
-            item.value = Item.sellPrice(copper: 50);
-            item.maxStack = 999;
+            Item.width = 26;
+            Item.height = 14;
+            Item.rare = ItemRarityID.Blue;
+            Item.value = Item.sellPrice(copper: 50);
+            Item.maxStack = 999;
         }
-        public override void AddRecipes() {
-		ModRecipe recipe = new ModRecipe(mod);
-		recipe.AddIngredient(ModContent.ItemType<EarthStone>(), 5);
-        recipe.AddTile(ModContent.TileType<MortarTile>());
-		recipe.SetResult(this, 5);
-		recipe.AddRecipe();
-        
-        new ModRecipe(mod);
-		recipe.AddIngredient(ModContent.ItemType<EarthGlobe>(), 15);
-        recipe.AddTile(ModContent.TileType<MortarTile>());
-		recipe.SetResult(this, 5);
-		recipe.AddRecipe();
-		}
+        public override void AddRecipes()
+        {
+            CreateRecipe(1)
+                .AddIngredient(ModContent.ItemType<EarthStone>(), 1)
+                .AddTile(ModContent.TileType<MortarTile>())
+                .Register();
+        }
     }
 }

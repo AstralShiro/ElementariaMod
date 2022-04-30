@@ -9,11 +9,11 @@ using System.Collections.Generic;
 
 namespace ElementariaMod.Content.Items.Minerals
 {
-	public class CosmicStone : ModItem
+	public class CosmoStone : ModItem
 	{
 		public override void SetStaticDefaults() 
 		{
-			DisplayName.SetDefault("Cosmic Stone");
+			DisplayName.SetDefault("Cosmo Stone");
 			Tooltip.SetDefault("A stone infused with elemental power");
 
 			Main.RegisterItemAnimation(Item.type, new DrawAnimationVertical(5,6));
@@ -21,7 +21,7 @@ namespace ElementariaMod.Content.Items.Minerals
 		}
 		public override void ModifyTooltips(List<TooltipLine> tooltips)
 		{
-			TooltipLine Line = new(Mod, "Cosmic Stone", "Cosmo Element");
+			TooltipLine Line = new(Mod, "Cosmo Stone", "Cosmo Element");
 			Line.overrideColor = new Color(255, 80, 20);
 			tooltips.Add(Line);
 		}

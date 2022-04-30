@@ -5,6 +5,8 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.GameContent.Creative;
 
+using ElementariaMod.Content.Items.Materials.Powders;
+
 namespace ElementariaMod.Content.Items.Materials.ElementalGlobes
 {
 	public class IceGlobe : ModItem
@@ -26,6 +28,13 @@ namespace ElementariaMod.Content.Items.Materials.ElementalGlobes
 			Item.value = 100;
 
 			Item.rare = ItemRarityID.Cyan;
+		}
+		public override void AddRecipes()
+		{
+			CreateRecipe(1)
+				.AddIngredient(ModContent.ItemType<IcePowder>(), 10)
+				.AddTile(TileID.Solidifier)
+				.Register();
 		}
 	}
 }

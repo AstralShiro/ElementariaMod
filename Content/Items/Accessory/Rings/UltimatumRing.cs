@@ -12,7 +12,7 @@ namespace ElementariaMod.Content.Items.Accessory.Rings
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Ultimatum Ring");
-            Tooltip.SetDefault("Give all the effects of the rings\nMana magnet\n+50 damage\nLife regen (4 HP per second)\nMana regen (4 Mana per second)\n+20 defense\n+20 movement speed\n+200 HP\n+200 Mana\nStar Cloak\nLava immune\nInvincibilty when you are hitted for a little time");
+            Tooltip.SetDefault("Give all the effects of the rings\nMana magnet\n+50 damage\nLife regen (4 HP per second)\nMana regen (4 Mana per second)\n+20 defense\n-20 movement speed\n+200 HP\n+200 Mana\nStar Cloak\nLava immune\nInvincibilty when you are hitted for a little time");
         }
 
         public override void SetDefaults()
@@ -39,7 +39,7 @@ namespace ElementariaMod.Content.Items.Accessory.Rings
             player.statManaMax2 += 200;
             player.manaRegen += 4;
             player.statDefense += 20;
-            player.moveSpeed -= 0.15f;
+            player.moveSpeed -= 0.20f;
             player.longInvince = true;
             player.lavaImmune = true;
             player.manaMagnet = true;

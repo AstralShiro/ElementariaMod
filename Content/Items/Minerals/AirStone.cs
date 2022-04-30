@@ -6,6 +6,8 @@ using Terraria.ModLoader;
 using Terraria.GameContent.Creative;
 using System.Collections.Generic;
 
+using ElementariaMod.Content.Items.Materials.Powders;
+
 namespace ElementariaMod.Content.Items.Minerals
 {
 	public class AirStone : ModItem
@@ -35,5 +37,5 @@ namespace ElementariaMod.Content.Items.Minerals
 			public override void PostUpdate() {
 			Lighting.AddLight(Item.Center, Color.WhiteSmoke.ToVector3() * 0.55f * Main.essScale);
 		}
-	}
+    }
 }

@@ -12,7 +12,7 @@ namespace ElementariaMod.Content.Items.Accessory.Rings
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Endurance Ring");
-            Tooltip.SetDefault("Increase your defense but decrease your movement speed. +15 denfese, -14 movement speed.");
+            Tooltip.SetDefault("Increase your defense but decrease your movement speed. +15 denfese, -20% movement speed.");
         }
 
         public override void SetDefaults()
@@ -27,7 +27,7 @@ namespace ElementariaMod.Content.Items.Accessory.Rings
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             player.statDefense += 15;
-            player.moveSpeed -= 0.14f;
+            player.moveSpeed -= 0.20f;
         }
 
         public override void AddRecipes()
