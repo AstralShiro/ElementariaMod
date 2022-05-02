@@ -1,5 +1,6 @@
 using Microsoft.Xna.Framework;
 using Terraria;
+using Terraria.DataStructures;
 using Terraria.ModLoader;
 
 using ElementariaMod.Content.Projectiles.PetsProj;
@@ -13,6 +14,7 @@ namespace ElementariaMod.Content.Buffs.PetBuffs
         {   
             DisplayName.SetDefault("Marshy Butterfly");
             Description.SetDefault("Pet - Marshy Butterfly.");
+
             Main.buffNoTimeDisplay[Type] = true;
             Main.lightPet[Type] = true;
         }
@@ -25,9 +27,9 @@ namespace ElementariaMod.Content.Buffs.PetBuffs
 
             if (player.whoAmI == Main.myPlayer && player.ownedProjectileCounts[projType] <= 0)
             {
-                var entitySource = player.GetProjectileSource_Buff(buffIndex);
+                //var entitySource = player.GetProjectileSource_Buff(buffIndex);
 
-                Projectile.NewProjectile(entitySource, player.Center, Vector2.Zero, projType, 0, 0f, player.whoAmI);
+                //Projectile.NewProjectile(entitySource, player.Center, Vector2.Zero, projType, 0, 0f, player.whoAmI);
             }
         }
     }

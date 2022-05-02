@@ -23,7 +23,7 @@ namespace ElementariaMod.Content.Items.Minerals
 		public override void ModifyTooltips(List<TooltipLine> tooltips)
 		{
 			TooltipLine Line = new(Mod, "Air Stone", "Air Element");
-			Line.overrideColor = new Color(255, 255, 255);
+			Line.OverrideColor = new Color(255, 255, 255);
 			tooltips.Add(Line);
 		}
 

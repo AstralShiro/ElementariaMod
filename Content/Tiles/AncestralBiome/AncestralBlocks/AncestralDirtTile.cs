@@ -17,7 +17,7 @@ namespace ElementariaMod.Content.Tiles.AncestralBiome.AncestralBlocks
 			Main.tileBlockLight[Type] = false;
 			Main.tileLighted[Type] = false;
 			ItemDrop = ModContent.ItemType<AncestralDirt>();
-			AddMapEntry(new Color(79, 79, 79));
+			AddMapEntry(new Color(200, 200, 200));
 		}
 	}
 }

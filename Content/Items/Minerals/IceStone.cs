@@ -22,7 +22,7 @@ namespace ElementariaMod.Content.Items.Minerals
         public override void ModifyTooltips(List<TooltipLine> tooltips)
         {
 			TooltipLine Line = new(Mod, "Ice Stone", "Ice Element");
-			Line.overrideColor = new Color(0, 125, 255);
+			Line.OverrideColor = new Color(0, 125, 255);
 			tooltips.Add(Line);
         }
 

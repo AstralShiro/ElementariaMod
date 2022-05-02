@@ -13,12 +13,22 @@ namespace ElementariaMod.Content.Tiles.ArcanumBiome.ArcanumBlocks
 		{
 			Main.tileSolid[Type] = true;
 			Main.tileMergeDirt[Type] = true;
-			Main.tileBlockLight[Type] = false;
-			Main.tileLighted[Type] = false;
+			Main.tileBlockLight[Type] = true;
+			Main.tileLighted[Type] = true;
 			//drop = ItemType<Items.Placeable.ArcanumBiome.ArcanumStone>();
-			AddMapEntry(new Color(79, 79, 79));
+			AddMapEntry(new Color(20, 20, 20));
 
 			ItemDrop = ModContent.ItemType<ArcanumStone>();
+		}
+		public override void ModifyLight(int i, int j, ref float r, ref float g, ref float b)
+		{
+			Tile tile = Main.tile[i, j];
+			if (tile.TileFrameX < 66)
+			{
+				r = 0.55f;
+				g = 0.3f;
+				b = 1f;
+			}
 		}
 	}
 }

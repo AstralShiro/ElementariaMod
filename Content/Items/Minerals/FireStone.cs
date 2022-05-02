@@ -21,7 +21,7 @@ namespace ElementariaMod.Content.Items.Minerals
 		public override void ModifyTooltips(List<TooltipLine> tooltips)
 		{
 			TooltipLine Line = new(Mod, "Fire Stone", "Fire Element");
-			Line.overrideColor = new Color(255, 50, 0);
+			Line.OverrideColor = new Color(255, 50, 0);
 			tooltips.Add(Line);
 		}
 

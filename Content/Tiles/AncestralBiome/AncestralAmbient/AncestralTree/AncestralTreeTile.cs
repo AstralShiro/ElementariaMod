@@ -31,10 +31,14 @@ namespace ElementariaMod.Content.Tiles.AncestralBiome.AncestralAmbient.Ancestral
 
 		public override Texture2D GetTopTextures(int i, int j, ref int frame, ref int frameWidth, ref int frameHeight, ref int xOffsetLeft, ref int yOffset) 
 		{
+			frame = 3;
+			frameHeight = 98;
+			frameWidth = 116;
 			return (Texture2D)ModContent.Request<Texture2D>("ElementariaMod/Content/Tiles/AncestralBiome/AncestralAmbient/AncestralTree/AncestralTreeTile_Tops");
 		}
-
-		public override Texture2D GetBranchTextures(int i, int j, int trunkOffset, ref int frame) {
+		public override Texture2D GetBranchTextures(int i, int j, int trunkOffset, ref int frame) 
+		{
+			frame = 6;
 			return (Texture2D)ModContent.Request<Texture2D>("ElementariaMod/Content/Tiles/AncestralBiome/AncestralAmbient/AncestralTree/AncestralTreeTile_Branches");
 		}
 	}

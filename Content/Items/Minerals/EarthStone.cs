@@ -21,7 +21,7 @@ namespace ElementariaMod.Content.Items.Minerals
 		public override void ModifyTooltips(List<TooltipLine> tooltips)
 		{
 			TooltipLine Line = new(Mod, "Earth Stone", "Earth Element");
-			Line.overrideColor = new Color(130, 60, 0);
+			Line.OverrideColor = new Color(130, 60, 0);
 			tooltips.Add(Line);
 		}
 

@@ -25,9 +25,9 @@ namespace ElementariaMod.Content.Buffs.PetBuffs
 
             if (player.whoAmI == Main.myPlayer && player.ownedProjectileCounts[projType] <= 0)
             {
-                var entitySource = player.GetProjectileSource_Buff(buffIndex);
+                //var entitySource = player.(buffIndex);
 
-                Projectile.NewProjectile(entitySource, player.Center, Vector2.Zero, projType, 0, 0f, player.whoAmI);
+                //Projectile.NewProjectile(entitySource, player.Center, Vector2.Zero, projType, 0, 0f, player.whoAmI);
             }
         }
     }

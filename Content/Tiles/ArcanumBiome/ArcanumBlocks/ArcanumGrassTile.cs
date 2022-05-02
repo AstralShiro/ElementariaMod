@@ -26,7 +26,7 @@ namespace ElementariaMod.Content.Tiles.ArcanumBiome.ArcanumBlocks
 			//TileID.Sets.SpreadOverground[Type] = true;
 
 			ItemDrop = ModContent.ItemType<ArcanumDirt>();
-			AddMapEntry(new Color(255, 120, 70));
+			AddMapEntry(new Color(80, 100, 255));
 		}
 		public override void ModifyLight(int i, int j, ref float r, ref float g, ref float b)
 		{
