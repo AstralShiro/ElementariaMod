@@ -6,6 +6,8 @@ using Terraria.ModLoader;
 using Terraria.Audio;
 using Terraria.ID;
 
+using ElementariaMod.Content.Backgrounds;
+
 
 namespace ElementariaMod
 {
@@ -21,9 +23,9 @@ namespace ElementariaMod
 
 		public override int Music => MusicLoader.GetMusicSlot(Mod, "Assets/Music/Moonshine");
 
-		//public override ModSurfaceBackgroundStyle MenuBackgroundStyle => ModContent.GetInstance<ExampleSurfaceBackgroundStyle>();
+		public override ModSurfaceBackgroundStyle MenuBackgroundStyle => ModContent.GetInstance<MenuSurfaceBackgroundStyle>();
 
-		public override string DisplayName => "Elementaria Menu";
+		public override string DisplayName => "Elementaria Mod Menu";
 
 		public override void OnSelected() {
 			SoundEngine.PlaySound(SoundID.AbigailSummon); // Plays a thunder sound when this ModMenu is selected
