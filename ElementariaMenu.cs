@@ -21,7 +21,7 @@ namespace ElementariaMod
 
 		//public override Asset<Texture2D> MoonTexture => ModContent.Request<Texture2D>($"{menuAssetPath}/SNMoon");
 
-		public override int Music => MusicLoader.GetMusicSlot(Mod, "Assets/Music/Moonshine");
+		public override int Music => MusicLoader.GetMusicSlot(Mod, "Assets/Music/UpdateIceFire");
 
 		public override ModSurfaceBackgroundStyle MenuBackgroundStyle => ModContent.GetInstance<MenuSurfaceBackgroundStyle>();
 

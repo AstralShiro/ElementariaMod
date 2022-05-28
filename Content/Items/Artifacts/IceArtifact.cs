@@ -14,9 +14,9 @@ namespace ElementariaMod.Content.Items.Artifacts
 
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Token N");
-            Tooltip.SetDefault("Use it for craft female vanities\n-Dev Stuff");
-            CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 29;
+            DisplayName.SetDefault("Ice Artifact");
+            Tooltip.SetDefault("Use this item to swear allegiance to Yneas and you will get her blessing");
+            CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
 
         public override void SetDefaults()
@@ -26,8 +26,16 @@ namespace ElementariaMod.Content.Items.Artifacts
 
             Item.rare = ModContent.RarityType<AncestralModRarity>();
             Item.value = Item.sellPrice(gold: 1);
-            Item.maxStack = 29;
+            Item.maxStack = 1;
             Item.consumable = true;
+            Item.buffType = ModContent.BuffType<Buffs.ElementalPowerBuff.IceBlessingBuff>();
         }
+        /*public override void AddRecipes()
+        {
+            CreateRecipe(1)
+                .AddIngredient(ModContent.ItemType<StoneFragment>(), 5)
+                .AddTile(ModContent.TileType<ElementalPedestalTile>())
+                .Register();
+        }*/
     }
 }
