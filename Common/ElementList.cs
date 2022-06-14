@@ -32,5 +32,10 @@ namespace ElementariaMod.Common
                 NPCID.SolarPillar,
             };
         }
+
+        public static void UnloadLists()
+        {
+            fireEnemies = null;
+        }
     }
 }
