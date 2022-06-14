@@ -1,5 +1,5 @@
 using Terraria.ModLoader;
-using ElemenrariaMod.Common;
+using ElementariaMod.Common;
 
 namespace ElementariaMod
 {
