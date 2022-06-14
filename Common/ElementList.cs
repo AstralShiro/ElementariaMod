@@ -8,6 +8,7 @@ namespace ElementariaMod.Common
     public class ElementLists
     {
         public static List<int> fireEnemies;
+        public static List<int> iceEnemies;
 
         public static void LoadLists()
         {
@@ -34,11 +35,38 @@ namespace ElementariaMod.Common
                 NPCID.Pumpking,
                 NPCID.LunarTowerSolar,
             };
+            iceEnemies = new List<int>()
+            {
+                NPCID.IceSlime,
+                NPCID.ZombieEskimo,
+                NPCID.CorruptPenguin,
+                NPCID.CrimsonPenguin,
+                NPCID.Deerclops,
+                NPCID.IceElemental,
+                NPCID.Wolf,
+                NPCID.IceGolem,
+                NPCID.Penguin,
+                NPCID.IceBat,
+                NPCID.SnowFlinx,
+                NPCID.SpikedIceSlime,
+                NPCID.UndeadViking,
+                NPCID.UndeadMiner,
+                NPCID.CyanBeetle,
+                NPCID.Nymph,
+                NPCID.ArmoredViking,
+                NPCID.IceTortoise,
+                NPCID.IcyMerman,
+                NPCID.IceMimic,
+                NPCID.PigronCorruption,
+                NPCID.PigronCrimson,
+                NPCID.PigronHallow,
+            };
         }
 
         public static void UnloadLists()
         {
             fireEnemies = null;
+            iceEnemies = null;
         }
     }
 }

@@ -9,12 +9,12 @@ namespace ElementariaMod
 
         public override void Unload()
         {
-            ElementList.UnloadLists();
+            ElementLists.UnloadLists();
         }
 
         public override void Load()
         {
-            ElementList.UnloadLists();
+            ElementLists.UnloadLists();
         }      
     }
 }
