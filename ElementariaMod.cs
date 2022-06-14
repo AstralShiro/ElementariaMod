@@ -12,4 +12,9 @@ namespace ElementariaMod
      {
           ElementList.UnloadLists();
      }
+
+     public override void Load()
+     {
+          ElementList.UnloadLists();
+     }
 }
