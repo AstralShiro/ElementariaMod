@@ -29,12 +29,12 @@ namespace ElementariaMod.Content.Items.Weapons.Custom.Sword
             Item.UseSound = SoundID.Item1;
         }
 
-        public override void ModifyHitNPC(Player player, NPC target, ref int damage, ref float knockBack, ref bool crit)
+        /*public override void ModifyHitNPC(Player player, NPC target, ref int damage, ref float knockBack, ref bool crit)
         {
             if (ElementLists.fireEnemies.Contains(target.type))
             {
                 damage = (int)(damage * 1.8f);
             }
-        }
+        }*/
     }
 }
