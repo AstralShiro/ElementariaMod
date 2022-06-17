@@ -12,7 +12,7 @@ namespace ElementariaMod.Common
 
         public static void LoadLists()
         {
-            fireEnemies = new List<int>()
+            fireEnemies = new List<int>
             {
                 NPCID.LavaSlime,
                 NPCID.VoodooDemon,
@@ -35,7 +35,7 @@ namespace ElementariaMod.Common
                 NPCID.Pumpking,
                 NPCID.LunarTowerSolar,
             };
-            iceEnemies = new List<int>()
+            iceEnemies = new List<int>
             {
                 NPCID.IceSlime,
                 NPCID.ZombieEskimo,
