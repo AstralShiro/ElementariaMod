@@ -1,0 +1,6 @@
+public override void OnHitNPC(Player player, NPC target, int damage, float knockback, bool crit)
+        {
+            target.AddBuff(BuffID.Chilled, 320); //Adjust the 320 for time of buff. Every 60 is one tick
+        }
+
+(I made this in a .txt file so it wouldnt effect the building and compiling of the mod. This code will work on a projectile or any weapon. )

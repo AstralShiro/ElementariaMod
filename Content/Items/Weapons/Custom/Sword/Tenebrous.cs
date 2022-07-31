@@ -26,7 +26,7 @@ namespace ElementariaMod.Content.Items.Weapons.Custom.Sword
             Item.autoReuse = true;
 			Item.useTurn = false;
 
-            Item.UseSound = SoundLoader.GetLegacySoundSlot(Mod, "Assets/Sounds/Items/DarkMagicSound");
+            Item.UseSound = SoundID.Item1;//SoundLoader.GetLegacySoundSlot(Mod, "Assets/Sounds/Items/DarkMagicSound");
 
 
             Item.shoot = ModContent.ProjectileType<TenebrousProj>();
